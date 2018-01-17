@@ -1,17 +1,16 @@
-#include <stdio.h>
-#include <math.h>
+#include <iostream>
 
-int main() {
-    float radius, area, perimeter = 0.0;
+int main () {
+    std::cout << "> Enter a radius: ";
+    float radius;
+    std::cin >> radius;
     
-    printf("Enter a radius: ");
-    scanf("%f", &radius);
+    float area = 3.14159 * radius * radius;
+    float circumference = 2 * 3.14159 * radius;
 
-    area = M_PI * radius * radius;
-    perimeter = M_PI * 2 * radius;
-
-    printf("Area: %f\n", area);
-    printf("Perimeter: %f\n", perimeter);
+    std::cout << "> Area: " << area << std::endl;
+    std::cout << "> Circumference: " << circumference << std::endl;
 
     return 0;
 }
+    
